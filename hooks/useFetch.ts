@@ -35,6 +35,10 @@ export const useFetch = <T>(fetchFunction: () => Promise<T>, autoFetch = true) =
     
 }
 
+// Remember:
+// Component Re-Render every time when state changes
+// UseEffect runs when intial render, and dependency array values change
+
 // Without useCallback
 // fetchData function is created at momory 001
 // Since this is first render, useEffect runs
