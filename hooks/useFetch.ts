@@ -12,6 +12,8 @@ export const useFetch = <T>(fetchFunction: () => Promise<T>, autoFetch = true) =
             setError(null);
             const result = await fetchFunction();
             setData(result);
+            console.log("Movie Response :", result );
+            
         } catch (err) {
             setError(err instanceof Error ? err : new Error('An Error Occoured'));
         } finally {
