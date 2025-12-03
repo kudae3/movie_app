@@ -1,10 +1,12 @@
 import axios from 'axios';
 
+const TOKEN = process.env.EXPO_ACCESS_TOKEN;
+
 export const TMDB_CONFIG = {
     BASE_URL: 'https://api.themoviedb.org/3',
     headers: {
         accept: 'application/json',
-        Authorization: `Bearer ${process.env.EXPO_ACCESS_TOKEN}`,
+        Authorization: `Bearer ${TOKEN}`,
     }
 }
 
