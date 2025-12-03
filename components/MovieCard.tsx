@@ -11,7 +11,7 @@ const MovieCard = ({
   release_date,
 }: Movie) => {
   return (
-    <Link href={`/movie/${id}`} asChild>
+    <Link href={`/movies/${id}`} asChild>
       <TouchableOpacity className="w-[30%]">
         <Image
           source={{
@@ -38,9 +38,9 @@ const MovieCard = ({
           <Text className="text-xs text-light-300 font-medium mt-1">
             {release_date?.split("-")[0]}
           </Text>
-          <Text className="text-xs font-medium text-light-300 uppercase">
+          {/* <Text className="text-xs font-medium text-light-300 uppercase">
             Movie
-          </Text>
+          </Text> */}
         </View>
       </TouchableOpacity>
     </Link>
