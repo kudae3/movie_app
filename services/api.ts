@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const TOKEN = process.env.EXPO_ACCESS_TOKEN;
+const TOKEN = process.env.EXPO_PUBLIC_ACCESS_TOKEN;
 
 export const TMDB_CONFIG = {
     BASE_URL: 'https://api.themoviedb.org/3',
